@@ -1,94 +1,90 @@
-/* Reset some default styles */
+/* CSS Reset for consistent styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styling */
+/* Set default font styles */
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
   color: #333;
-  padding: 1em;
+  background-color: #f4f4f9;
+  padding: 1rem;
 }
 
 /* Navigation Styling */
-nav {
+.main-nav {
   text-align: center;
-  background-color: #333;
+  background-color: #444;
   padding: 1em 0;
 }
 
-ul.navigation {
+.nav-list {
   list-style: none;
 }
 
-ul.navigation li {
+.nav-list li {
   display: inline;
-  margin: 0 15px;
+  margin: 0 1.5em;
 }
 
-ul.navigation li a {
+.nav-list a {
   text-decoration: none;
-  color: #fff;
   font-weight: bold;
-  font-size: 1.2em;
+  color: #fff;
+  transition: color 0.3s ease;
 }
 
-ul.navigation li a:hover {
-  color: #ffa500;
+.nav-list a:hover {
+  color: #ff6347;
 }
 
-/* Main content styling */
+/* Heading and Text Styling */
 h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: #333;
+  margin-bottom: 2rem;
 }
 
-ul.flower-list {
-  list-style-type: none;
-  margin: 2em 0;
+.flower-list {
+  list-style: none;
   padding: 0;
 }
 
-ul.flower-list li {
-  background-color: #fff;
-  margin-bottom: 1.5em;
-  padding: 1em;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.flower-list li {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
-ul.flower-list img {
+/* Image Styling */
+img {
+  display: block;
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  margin-top: 1em;
+  margin: 1rem 0;
+  border-radius: 10px;
 }
 
-/* Footer styling */
+/* Footer Styling */
 footer {
   text-align: center;
-  margin-top: 2em;
-  font-size: 0.9em;
+  padding: 2rem;
+  background-color: #333;
+  color: #fff;
+  font-size: 0.9rem;
 }
 
-/* Responsive adjustments */
-@media (min-width: 768px) {
-  body {
-    max-width: 80%;
-    margin: 0 auto;
+/* Responsive Fluid Layout */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
   }
-}
 
-/* Custom font weights and font styles */
-h1, h2 {
-  font-weight: 700;
-}
-
-strong {
-  font-style: italic;
+  .nav-list li {
+    display: block;
+    margin: 0.5em 0;
+  }
 }
