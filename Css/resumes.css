@@ -1,0 +1,93 @@
+/* General page styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Imported font */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+  font-weight: 700; /* Bold headers */
+}
+
+p, li {
+  font-weight: 400; /* Regular text */
+  font-size: 1rem;
+}
+
+/* Navigation styles */
+.nav {
+  background-color: #333;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.nav-list {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav-list li a:hover {
+  color: #ff6600; /* Hover effect */
+}
+
+/* Header section */
+header {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 1rem;
+}
+
+/* Section styling */
+section {
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 800px; /* Fixed-width layout for content */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+/* Certifications and Skills lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem; /* Reduce text size on small screens */
+  }
+
+  .nav-list li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
